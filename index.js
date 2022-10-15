@@ -10,7 +10,7 @@ app.get('/', async (http_request, http_response) => {
 });
 
 
-// const { API_KEY, API_SECRET_KEY, SCOPES, SHOP, HOST, HOST_SCHEME } = process.env;
+const { API_KEY, API_SECRET_KEY, SCOPES, SHOP, HOST, HOST_SCHEME } = process.env;
 
 // Shopify.Context.initialize({
 //     API_KEY,
