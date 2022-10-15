@@ -10,7 +10,9 @@ app.get('/', async (http_request, http_response) => {
 });
 
 
-const { API_KEY, API_SECRET_KEY, SCOPES, SHOP, HOST, HOST_SCHEME } = process.env;
+// const { API_KEY, API_SECRET_KEY, SCOPES, SHOP, HOST, HOST_SCHEME } = process.env;
+
+const PORT = process.env.PORT || 3000;
 
 // Shopify.Context.initialize({
 //     API_KEY,
@@ -113,4 +115,4 @@ const { API_KEY, API_SECRET_KEY, SCOPES, SHOP, HOST, HOST_SCHEME } = process.env
 
 const httpServer = http.createServer(app);
 
-httpServer.listen(3000, () => console.log('Your Slack-OAuth app is listening on port 3000.'));
+httpServer.listen(PORT, () => console.log('Your Slack-OAuth app is listening on port 3000.'));
